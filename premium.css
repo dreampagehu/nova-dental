@@ -118,7 +118,7 @@ footer{grid-template-columns:1fr}
 }
 
 /* Animated tooth hero */
-.hero.hero-tooth{--hero-progress:0;--tooth-turn:-10deg;--tooth-tilt:7deg;--tooth-shift:0px;height:180svh;min-height:1180px;display:block;background:#061519;overflow:clip}
+.hero.hero-tooth{--hero-progress:0;--tooth-turn:0deg;--tooth-tilt:7deg;--tooth-shift:0px;height:200svh;min-height:1280px;display:block;background:#061519;overflow:clip}
 .hero-stage{position:sticky;top:0;height:100svh;min-height:700px;isolation:isolate;overflow:hidden;background:radial-gradient(circle at 66% 48%,rgba(53,174,185,.2),transparent 25%),radial-gradient(circle at 60% 52%,rgba(232,205,160,.08),transparent 43%),linear-gradient(145deg,#061519 0%,#071b20 55%,#031013 100%)}
 .hero-stage::before{content:"";position:absolute;inset:0;z-index:-1;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:72px 72px;mask-image:radial-gradient(circle at 66% 48%,#000,transparent 68%)}
 .hero-aura{position:absolute;left:66%;top:50%;width:min(58vw,820px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(53,174,185,.16),rgba(53,174,185,.045) 42%,transparent 69%);transform:translate(-50%,-50%) scale(calc(.88 + var(--hero-progress)*.24));filter:blur(8px);opacity:0;transition:opacity 1.5s ease}

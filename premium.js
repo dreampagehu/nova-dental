@@ -37,9 +37,9 @@ if (toothHero && toothImage) {
     const progress = Math.min(Math.max(-toothHero.getBoundingClientRect().top / travel, 0), 1);
 
     toothHero.style.setProperty('--hero-progress', progress.toFixed(4));
-    toothHero.style.setProperty('--tooth-turn', `${-10 + progress * 48}deg`);
-    toothHero.style.setProperty('--tooth-tilt', `${7 - progress * 18}deg`);
-    toothHero.style.setProperty('--tooth-shift', `${progress * -42}px`);
+    toothHero.style.setProperty('--tooth-turn', `${progress * 360}deg`);
+    toothHero.style.setProperty('--tooth-tilt', `${7 - progress * 14}deg`);
+    toothHero.style.setProperty('--tooth-shift', `${Math.sin(progress * Math.PI) * -30}px`);
     heroTicking = false;
   };
 
